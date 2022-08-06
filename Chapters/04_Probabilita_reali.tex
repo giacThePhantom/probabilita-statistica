@@ -1,0 +1,42 @@
+\chapter{Probabilit\`a sui reali}
+\section{Costruzione di uno spazio probabilizzato su uno spazio campionario pi\`u che numerabile}
+Si consideri $\Omega=\mathbb{R}$ (i seguenti risultati potranno essere estesi facendo uso degli spazi prodotto nei casi $\Omega0\mathbb{R}^n$). Considerare come trib\`u $P(\mathbb{R})$ 
+presenta dei problemi in quanto sarebbe troppo vasta. Si considera pertanto una trib\`u meno fine che contenga tutti gli intervalli nella forma $]a,b]$, con $a\le b$. Si consideri 
+pertanto la trib\`u generata a partire da questa classe di insiemi, ovvero posto $\mathcal{F}=\{]a,b]:a\le b, a, b\in\mathbb{R}\}$ la trib\`u pi\`u piccola che contiene tutti i suddetti
+intervalli \`e $\mathcal{A_F}=\bigcap\{\mathcal{A}:\mathcal{A}$ \`e una trib\`u e $\mathcal{F}\subseteq\mathcal{A}\}$.
+\subsection{Trib\`u Boreliana}
+\subsubsection{Definzione}
+Si chiama trib\`u Boreliana di $\mathbb{R}$ e si denota con $\mathcal{B}(\mathbb{R})$ la trib\`u generata su $\mathbb{R}$ dalla classe di tutti gli intervalli $]a,b]$ di $\mathbb{R}$. I 
+suoi elementi si chiamano insiemi boreliani di $\mathcal{B}$ e $(\mathbb{R},\mathcal{B}(\mathbb{R}))$ \`e uno spazio probabilizzabilie.
+\subsubsection{Insiemi borelliani}
+\begin{itemize}
+\item $]a,b[=\bigcup\limits_{n=1}^{+\infty}]a,b-\frac{1}{n}]$.
+\item $[a,b]=\bigcap\limits_{n=1}^{+\infty}]a-\frac{1}{n},b]$.
+\item $[a,b[=\bigcup\limits_{n=1}^{+\infty}\bigcap\limits_{n=1}^{+\infty}]a-\frac{1}{n},b-\frac{1}{n}]$. 
+\item $]-\infty,b]=\bigcup\limits_{n=1}^{+\infty}]-n, b]$. Allo stesso modo $]a,+\infty[$.
+\item $a=\bigcup\limits_{n=1}^{+\infty}]a-\frac{1}{n},a]$.
+\item $A=\{a_1,a_2,\cdots, a_n\}=\bigcap\limits_{j=1}^n\{a_j\}$.
+\item $B=\bigcup\limits_{j=1}^{+\infty}\{a_j\}$.
+\end{itemize}
+Non sono borelliani tutti gli insiemi per cui il concetto di lunghezza, area, volume non ha senso come per esempio l'insieme di Vitali.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+\section{Misura di probabilit\`a}
+\subsection{Funzione di distribuzione}
+Per provedere all'assegnazione di una funzione di probabilit\`a agli eventi di $\mathcal{B}(\mathbb{R})$ si fissa la probabilit\`a da attribuire agli intervalli $]a,b]$ mediante una 
+funzione $F(x)$ che:
+\begin{itemize}
+\item Non \`e decrescente.
+\item \`e continua a destra: $\forall x_0\in\mathbb{R}$, $\lim\limits_{x\rightarrow x_0^+}(x)=F(x_0)$.
+\item ammette limite a sinistra: $\forall x_0\in\mathbb{R}, \exists\lim\limits_{x\rightarrow x_0^-}(x)$.
+\item $\lim\limits_{x\rightarrow+\infty}F(x)=1$.
+\item $\lim\limits_{x\rightarrow-\infty}F(x)=0$.
+\end{itemize}
+Ponendo $F(]a,b])=F(b)-F(a)$. Il calcolo effettivo di $Pr(A)$ semplice quando $A$ \`e un intervallo o un'unione numerabile di intervalli disgiunti:
+$Pr(\bigcup\limits_{i=1}^\infty]a_i,b_i])=\sum\limits_{i=1}^\infty Pr(]a_i,b_i])=\sum\limits_{i=1}^\infty(F(b_i)-f(a_i))$. Se $A$
+\subsubsection{Osservazione}
+\begin{itemize}
+\item $Pr(]a,b])=F(b)-F(a)$. Sia $A=\bigcup\limits_{i=1}^{+\infty}]a_i,b_i]\;\;]a_i,b_i]\cap]a_j,b_j]=\emptyset\;\;\forall i\neq j$, pertanto $Pr(A)=Pr(\bigcup\limits_{i=1}^{+\infty}]a_i,b_i])=\sum\limits_{i=1}^{+\infty}Pr(]a_i,b_i])=\sum\limits_{i=1}^{+\infty}F(b_i)-F(a_i)$.
+\item $Pr([a,b])=Pr(\lim\limits_{n\rightarrow+\infty} ]a-\frac{1}{n}, b])=\lim\limits_{n\rightarrow+\infty}Pr(]a-\frac{1}{n};b])$, questa operazione \`e possibile se e solo se 
+la funzione di distribuzione \`e continua e monotona nell'intorno. 
+\item $Pr(\{a\})=Pr([a,b]\backslash]a,b])=Pr([a,b])-Pr(]a,b])$. 
+\end{itemize}
+

@@ -1,0 +1,106 @@
+\chapter{Probabilit\`a}
+\section{Spazio probabilizzabile}
+Uno spazio probabilizzablie \`e uno spazio su cui potenzialmente si pu\`o definire una misura di probabilit\`a. Si dice spazio probabilizzabile la coppia 
+$(\Omega, \mathcal{A})$ dove $\Omega$ \`e uno spazio campionario e $\mathcal{A}$ \`e una trib\`u su $\Omega$. 
+\section{La funzione di probabilit\`a}
+Dato uno spazio probabilizzabile $(\Omega, \mathcal{A})$ una funzione di probabilit\`a (o una probabilit\`a) \`e una funzione $Pr:\mathcal{A}
+\rightarrow[0;1]$. La particolare funzione da associare ad un particolare spazio probabilizzato dipende ed \`e caratteristica di esso.
+\subsection{Assiomi di Kolmogorov}
+Qualunque funzione che associa ad un elmento di $\mathcal{A}$ un numero reale pu\`o essere considerata una funzione di probabilit\`a se rispetta i 
+seguenti assiomi:
+\begin{itemize}
+\item Non negavitivit\`a: se $A\in \mathcal{A}$ allora $Pr(A)\ge 0$.
+\item Normalizzazione: $Pr(\Omega)=1$
+\item Di $\sigma$-additivit\`a: $\forall n\in\mathbb{R}^++\{\infty\}\;\;\{A_i\}_{i=1}^{n}: A_i\in \mathcal{A}\wedge A_i\cap A_j=\emptyset\;\forall i\neq j
+$ allora $Pr(\bigcup\limits_{i=1}^nA_i)=\sum\limits_{i=1}^{+\infty}Pr(A_i)$. In particolare se $A,B\in \mathcal{A}$ e $A\cap B=\emptyset$ allora: $Pr(A
+\cup B)=Pr(A)+Pr(B)$.
+\end{itemize}
+\subsubsection{Conseguenze degli assiomi}
+\begin{itemize}
+\item $Pr(\emptyset)=0$.
+\item $Pr(A)\le 1$.
+\item $Pr(A^c)=1-Pr(A)$.
+\item Se $A\subseteq B$ allora $Pr(A)\le Pr(B)$.
+\item $Pr(A\cup B)=Pr(A)+Pr(B)-Pr(A\cap B)$. Si noti che se i due eventi sono disgiunti si riottiene il terzo assioma
+\end{itemize}
+\section{Spazio probabilizzato}
+Uno spazio probabilizzato (o spazio di probabilit\`a o spazio di Kolmorogov) \`e la terna $(\Omega, \mathcal{A}, Pr)$ che rispettivamente sono spazio 
+campionario, trib\`u su $\Omega$ e una funzione di probabilit\`a $Pr:\mathcal{A}\rightarrow\mathbb{R}^+$.
+\subsection{Regole di calcolo}
+\subsubsection{Probabilit\`a che l'evento non si verifichi}
+\begin{equation}
+Pr(A^c)=1-Pr(A)
+\end{equation}
+Sia $A\in\mathcal{A}$. Essendo $[A\cup A^c]=\Omega\in\mathcal{A}$ e $(A\cap A^c)=\emptyset\in\mathcal{A}$ ed essendo per il secondo assioma $Pr(\Omega)=1$ 
+e per il terzo $Pr(A\cup A^c)=Pr(A)+Pr(A^c)$, essendo elementi disgiunti allora $Pr(A^c)=1-Pr(A)$.\\
+\textbf{Osservazione:} considerando $A_1,A_2,A_n$, con $A_i\in\mathcal{A}\;\forall i=1,\cdots,n$, $\bigcap\limits_{i=1}^nA_i$ \`e l'intersezione 
+enumerabile di $n$ eventi, che rappresenta un evento, perci\`o la trib\`u \`e chiusa rispetto all'intersezione.
+\subsubsection{Probabilit\`a che si verifichi almeno un evento tra i due}
+\begin{equation}
+Pr(A\cup B)=Pr(A)+Pr(B)-Pr(A\cap B)
+\end{equation}
+Siano $A,B\in\mathcal{A}$. Essendo $A\cup B=A\cup(B\cap A^c)$, $B=(A\cap B)\cup(A^c\cap B)$, $Pr(A\cap B)-Pr(B)=Pr(A)+Pr(B\cap A^c)-Pr(A\cap B)-Pr(B\cap 
+A^c)$, ovvero $Pr(A\cup B)=Pr(A)+Pr(B)-Pr(A\cap B)$.\\
+\textbf{Osservazione:} una conseguenza di questa regola di calcolo \`e che $Pr(A\cup B)\le Pr(A)+Pr(B)$, o, pi\`u in generale $Pr(\bigcup\limits_{i=0}
+^nA_i)\le\sum\limits_{i=0}^nPr(A_i)$.
+\subsection{Un evento implica un altro}
+Considerando i due eventi $A,B$ tali che $A\subset B$, allora:
+\begin{equation}
+Pr(B)=Pr(A)+Pr(B\cap A^c)\ge Pr(A)
+\end{equation}
+Perci\`o $Pr(B)\ge Pr(A)$ in quanto $B=A\cup(B\cap A^c)$, ed essrndo $A$ e $B\cap A^c$ incompatibili, si ottiene che $Pr(B)=Pr(A)+Pr(B\cap A^c)$. Essendo
+$B\cap A^c$ un evento $Pr(B\cap A^c)\ge 0$, da cui il risultato.\\
+\textbf{Osservazione:} da questa regola derivano queste considerazioni:
+\begin{itemize}
+\item $\forall A\in\mathcal{A}, Pr(A)\le 1$ (basta porre $B=\Omega$).
+\item $A\subseteq B\wedge B\subseteq A\Rightarrow Pr(A)=Pr(B)$.
+\item $Pr(A)\le Pr(B)\wedge Pr(A)\ge Pr(B)\Rightarrow A=B$.
+\end{itemize}
+\subsection{Disuguaglianza di Bonferroni}
+Siano $A_1,\cdots, A_n$ eventi di una trib\`u,e $n\ge 1$ allora:
+\begin{equation}
+\sum\limits_{i=1}^nPr(A_i)-\sum\limits_{1\le i\le j\le n}Pr(A_i\cap A_j)\le Pr(\bigcup\limits_{i=1}^nA_i)\le \sum\limits_{i=1}^nPr(A_i)
+\end{equation}
+Basta verificare la disuguaglianza di sinistra, procedendo per induzione (dimostrazione incompleta): per $n=1$ \`e banalmente verificata.\\
+Per $n=2$: $Pr(A_1)+Pr(A_2)-Pr(A_1\cap A_2)=Pr(A_1\cup A_2)$.\\
+Per $n=3$: $Pr(A_1\cup A_2\cup A_3)=Pr(A_1\cup A_2)+Pr(A_3)-Pr((A_1\cup A_2)\cap A_3)$\\
+$=Pr(A_1)+Pr(A_2)-Pr(A_1\cap A_2)+Pr(A_3)-Pr((A_1\cap A_3)\cup (A_2\cap A_3))$\\
+$=\sum\limits_{i=1}^3Pr(A_i)-Pr(A_1\cap A_2)-[Pr(A_1\cup A_3)+Pr(A_2\cup A_3)-Pr(A_1\cap A_2\cap A_3)]$\\
+$=\sum\limits_{i=1}^3Pr(A_i)-\sum\limits_{1\le i\le j\le 3}Pr(A_i\cap A_j)+Pr(A_1\cap A_2\cap A_3)$.
+\section{Limiti e probabilit\`a}
+\begin{itemize}
+\item Se $A_1\subset A_2\subset\cdots\in\mathcal{A}$ \`e una successione di eventi non decrescente e $A=\lim A_n=\bigcup_{n=1}^\infty A_n$ allora:
+\begin{equation}
+Pr(\lim A)=\lim Pr(A)
+\end{equation}
+\item Se $A_1\supset A_2\supset\cdots\in\mathcal{A}$ \`e una successione di eventi non crescente e $A=\lim A_n=\bigcap_{n=1}^\infty A_n$ allora:
+\begin{equation}
+Pr(\lim A)=\lim Pr(A)
+\end{equation}
+\end{itemize}
+\subsubsection{Dimostrazione}
+Poich\`e $A=\bigcup\limits_{n=1}^\infty A_n=\bigcup\limits_{n=1}^\infty A_n\backslash A_{n-1}=\bigcup\limits_{n=1}^\infty (A_n\cap A^c_{n-1})$, avendo 
+definito $A_0=\emptyset$ ed \`e $A_{n-1}\subset A_n$, dunque $\forall n, (A_n\cap A^c_{n-1})$ sono eventi incompatibili e dunque per la 
+$\sigma$-additivit\`a $Pr(A)=Pr(\bigcup\limits_{n=1}^\infty A_n\backslash A_{n-1})=\sum\limits_{n=1}^\infty Pr(A_n\backslash A_{n-1})=$\\
+$=\sum\limits_{n=1}^\infty Pr(A_n)-Pr(A_{n-1})=\lim\limits_{N\rightarrow\infty}\sum\limits_{n=1}^NPr(A_n)-Pr(A_{n-1})=\lim\limits_{N\rightarrow\infty}
+Pr(A_N)$\\
+Per la seconda parte si considerino i complementari in modo che $A_1^c\subset A_2^c\subset\cdots$, si ottiene: $\lim\limits_{n\rightarrow\infty}A_n^c=
+\bigcup\limits_{n=1}^\infty A_n^c=(\bigcap\limits_{n=1}^\infty A_n)^c=A^c$, allora $\lim\limits_{n\rightarrow\infty}Pr(A_n^c)=Pr(\lim\limits_{n\rightarrow
+\infty}A_n^c)=Pr(A^c)$, pertanto $\lim\limits_{n\rightarrow\infty}Pr(A_n)=\lim\limits_{n\rightarrow\infty}(1-Pr(A_n^c))=1- \lim\limits_{n\rightarrow
+\infty}Pr(A_n^c)=1-Pr(\lim\limits_{n\rightarrow\infty}A_n^c)=1-Pr(A^c)=Pr(A)$.
+\section{Costruzione della funzione di probabilit\`a}
+Si definisca una funzione di probabilit\`a considerando al pi\`u uno spazio $\Omega$ numerabile e come trib\`u $\mathcal{A}=P(\Omega)$. Si supponga $
+\Omega=\{w_1,w_2,\cdots\}$ e ad ogni evento $w_i\in\Omega$ si assegna un peso $p(w_i)$, con $i\in\mathbb{N}$ in modo che $p(w_i)\ge0$ e $\sum\limits_{i=1}^
+\infty p(w_i)=1$. Per ogni evento $A\in\mathcal{A}$ si definisce la sua probabilit\`a come somma dei pesi di ogni $w_i$ che appartiene ad $A$, ovvero
+$Pr(A)=\sum\limits_{w_i\in A}p(w)=\sum\limits_{w_i\in A}P(\{w\})$.
+\section{Prodotto di una famiglia di trib\`u}
+Data una qualsiasi famiglia $\{(\Omega_i,\mathcal{A}_i)\}_{i\in I}$ di spazi probabilizzabili si considerino tutte le famiglie $\{A_i\}_{i\in I}$ con $A_i\in
+\mathcal{A}_i$ per ogni indice $i$ e $A_i\neq\Omega_i$ al pi\`u per un numero finito di indici. Per ogni siffatta famiglia si consideri il "rettangolo" generato
+$\prod\limits_{i\in I}\Omega_i$ la trib\`u generata su questo insieme dalla classe di questi "rettangoli" si chiama trib\`u prodotto della famiglia di trib\`u
+$\{\mathcal{A}_i\}_{i\in I}$ e si denota come $\otimes_{i\in I}\mathcal{A}_{i}$. Quando $I=\{1,2,\cdots, n\}$ si indica come $\mathcal{A}_1\otimes
+\mathcal{A}_2\otimes\cdots\otimes\mathcal{A}_n$.
+\subsection{Prodotto di una famiglia di uno spazio probabilizzato}
+Data una famiglia $\{(\Omega_i,\mathcal{A}_i, Pr_i)\}_{i\in I}$ di spazi probabilizzati si nota che sulla trib\`u prodotto $\otimes_{i\in I}\mathcal{A}_i$ 
+esiste un unica funzione di probabilit\`a tale che $Pr(\prod\limits_{i\in I}A_i)=\prod\limits_{i\in I}Pr(A_i)$ per ogni famiglia $\{A_i\}_{i\in I}$ come 
+definita precedentemente. Questa probabilit\`a si chiama probabilit\`a prodotto della famiglia e si indica come $\otimes_{i\in I}Pr(A_i)$. Se $i\in\{1,2,\cdots,
+n\}$ si indica come $Pr_1\otimes Pr_2\otimes\cdots\otimes Pr_n$.

@@ -1,0 +1,24 @@
+\chapter{Generare sottoproblemi}
+Si supponga di avere uno spazio probabilizzato $(\Omega,\mathcal{A},Pr)$ e di avere una nuova informazione $H$ nella forma "\`e accaduto $H$". Si necessida di definire un nuovo 
+spazio campionario, una trib\`u e uno spazio probabilizzato $\Omega_H=\{A\subseteq H:A\in\Omega\}$, siccome $H\subseteq\Omega$, $\Omega_H=H$. La trib\`u $\mathcal{A}_H=\{A\cap H:A
+\in\mathcal{A}\}$. A questo punto $(\Omega_H,\mathcal{A}_H)$ \`e uno spazio probabilizzabile. La nuova misura di probabilit\`a, $Pr_H$, $Pr_H(\Omega_H)=1$, perci\`o per 
+trasferire la probabilit\`a si consideri $A\in\mathcal{A}$ e $H\in\mathcal{A}$, \`e necessario attuare una nuova misura di normalizzazione, ovvero 
+\begin{equation}
+Pr_H(A\cap H)=\dfrac{Pr(A\cap H)}{Pr(H)}
+\end{equation}
+\section{Probabilit\`a condizionale}
+$(\Omega,\mathcal{A},Pr)\xrightarrow[]{\text{H \`e accaduto}}(\Omega,\mathcal{A},Pr(\cdot|H))$, con l'unica differenza rispetto a quello visto prima che cambia solo misura di 
+probabilit\`a, non spazio campionario o trib\`u. Nello spazio $(\Omega,\mathcal{A})$, 
+\begin{equation}
+Pr(A|H)=\dfrac{Pr(A\cap H)}{Pr(H)}
+\end{equation}
+Se $Pr(H)>0$, altrimenti non \`e definita.  
+\section{teorema delle probabilit\`a totali}
+Dato uno spazio $\Omega$ e considerando un insieme di insiemi, una quantit\`a al pi\`u numerabile \`e considerata una partizione $\{A_i\}_{i=1}^n: A_i\cap A_j=\emptyset\forall i
+\neq j$ e $\bigcup\limits_{i=1}^nA_i=\Omega$. Si consideri uno spazio probabilizzato su $(\Omega,\mathcal{A}, Pr)$ tali che $A_i\in\mathcal{A}\forall i$. Si consideri $B\in
+\mathcal{A}$, allora $Pr(B)$ si pu\`o calcolare considerando le varie intersezioni con le partizioni, $Pr(B)=Pr(\bigcup\limits_{i=1}^n(A_i\cap B))$. Essendo gli elementi della
+partizione disgiunti, anche la loro intersezione con $B$ sar\`a disgiunta. Questa operazione pertanto crea una partizione di $B$, pertanto $Pr(B)=\sum\limits_{i=1}^n=Pr(A_i\cap 
+B)$.  Se $Pr(A_i)>0\;\;\forall i$. Pertanto $Pr(A_i\cap B)=Pr(A_i)Pr(B|A_i)$.
+\subsection{Enuncitato}
+Data una partizione e uno spazio probabilizzato, tale che gli elementi siano eventi con probabilit\`a positiva, allora ogni altro evento posso calcolarla come somma delle
+intersezioni con gli elementi della partizione.

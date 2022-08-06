@@ -1,0 +1,27 @@
+\chapter{Variabili aleatorie multidimensionali}
+Si consideri $(\Omega, \mathcal{A}, P)\rightarrow(\mathbb{R}^P,\mathcal{B}(\mathbb{R}^P), P)$, ovvero l'idea \`e che $X(w)$ variable aleatoria $w\rightarrow (X_1(w), X_2(w),
+\cdots, X_P(w))$, dove $X(w)$ \`e una funzione $\Omega\rightarrow\mathbb{R}^P$. 
+\section{Boreliani}
+Si considerano gli intervalli della stessa forma (chiuso a destra, aperto a sinistra) e si fa il prodotto cartesiano: $]x_{11}, x_{12}]\times]x_{21}, x_{22}]\times]x_{P1}, 
+x_{P2}]$, ovvero $\mathcal{A}=\{$tutti i rettangoli ottenuti come prodotto cartesiano di tutti i rettangoli aperti a sinistra e chiusi a destra $\}$. $\mathcal{B}(\mathbb{R}^P)=\sigma(\mathcal{A})$. 
+\section{Variabili aleatorie discrete bidimensionali}
+Si indicher\`a con $P_{x,y}(x,y)=Pr(\{X(w)=x\}\cap\{Y(w)=y\})$. La funzione di probabilit\`a per la variabile aleatoria bivariata viene chiamata funzione di probabilit\`a
+congiunta. $p_x(x)=Pr(\{X(w)=x\}\cap\Omega\}$, le antiimmagini di una variabile aleatoria formano partizioni di $\Omega$, pertanto $Pr(\{X(w)=x\}\cap\{\bigcup\limits_{y_i\in R_y}Y(w)=y_i\})$, utilizzando la propriet\`a distributiva si ottiene $\sum\limits_{y_i\in R_y}Pr(X(w)=x\cap Y(w)=y_i)$, ovvero $\sum\limits_{y_i\in R_y}P_{x,y_i}$. Pertanto 
+si pu\`o esprimere la funzione di probabilit\`a di una variabile aleatoria a partire dalla funzione di probabilit\`a della variabile congiunta. Le funzioni delle
+singole variabili aleatorie vengono chiamate funzioni di probabilit\`a marginali. Date le funzioni di probabilit\`a marginali non posso determinare la funzione congiunta. 
+Pertanto $p_x(x)=\sum\limits_{y\in R_y}P_{X,Y}(x, y)$ e $p_y(y)=\sum\limits_{x\in R_x}P_{X,Y}(x, y)$.
+\section{Funzione di ripartizione congiunta}
+$F_{x,y}(x,y)=Pr(\{w\in\Omega|X(w)\le x\}\cap\{w\in\Omega|Y(w)\le y\})=Pr(\{w\in\Omega|(X(w), Y(w))\in ]-\infty,x]\times ]-\infty, y]\})$. $F_{X,Y}(x, y)=\sum\limits p_{X,Y}
+(x,y)$.
+\section{Variabili aleatorie bivariate continue}
+\subsection{Densit\`a}
+\subsubsection{Definizione}
+Una densit\`a per una variabile aleatoria bivariata \`e una funzione $f(x, y)$ su $\mathbb{R}^2$ se e solo se $f(x, y)\ge0\;\;\forall (x, y)\in\mathbb{R}^2$ e $\int_{\mathbb{R}
+^2}f(x, y)dxdy=1$ ($=\int_\mathbb{R}\int_\mathbb{R}f(x, y)dxdy$, ovvero si integra prima per una variabile e poi per l'altra, considerandone una costante). La probabilit\`a
+\`e data dall'area sottesa alla curva, pertanto $Pr((X, Y)\in C)=\int_Cf(x, y)dxdy$, in particolare $Pr(\{X\le x\}\cap \{Y\le y\})=\int_{-\infty}^y\int_{-\infty}^xf(u, 
+v)dudv=F(x, y)$. Quest'ultima \`e la relazione tra la densit\`a e la funzione di ripartizione bivariata continua. Si considerino ora due intervalli, uno sulla $X$ e uno sulla 
+$Y$ e di voler andare a calcolare la probabilit\`a del rettangolo costruito come prodotto cartesiano dei due intervalli, $Pr(\{a< X\le b\}\cap \{c<Y\le d\})=\int_c^d
+\int_a^bf(x, y)dxdy$. 
+\subsection{Relazione tra densit\`a congiunta e marginali}
+$X\sim f_X(x)$ e $Y\sim f_Y(y)$ le due densit\`a marginali e $(X, Y)\sim f_{X,Y}(x, y)$ la densit\`a congiunta. Il passaggio dalla densit\`a congiuta a quella marginale \`e: 
+$f_X(x)=\int_{-\infty}^{+\infty}f_{X,Y}(x, y)dy$ e $f_Y(y)=\int_{-\infty}^{+\infty}f_{X,Y}(x, y)dx$.

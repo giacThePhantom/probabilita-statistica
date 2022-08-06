@@ -1,0 +1,70 @@
+\chapter{Introduzione}
+Per dare una valutazione di incertezza \`e necessario definire il metodo dell'esperimento.
+\section{Esperimento casuale o esperimento aleatorio}
+Un esperimento determinato da un certo individuo in un certo istante. Pur avendo una serie di informazioni su di esso l'individuo non \`e in grado di determinarne con certezza
+il risultato, indipendentemente dal fatto che l'esperimento sia gi\`a avvenuto oppure no.
+\subsection{Spazio campionario}
+Lo spazio che contiene tutti risultati possibili dell'esperimento. Indicato con $\Omega$. Gli elementi di $\Omega$ sono mutualmente esclusivi (l'avvenimento di uno esclude gli altri) e 
+lo spazio \`e esaustivo (contiene tutti i risultati possibili). Gli elementi di $\Omega$ si chiamano eventi elementari. 
+\section{Insiemistica}
+Si definisca:
+\begin{itemize}
+\item $A^c$ il complementare di $A$.
+\item $A\backslash B=A\cap B^c$ la differenza tra due insiemi.
+\item $A\Delta B=(A\backslash B)\cup(B\backslash A)$.
+\end{itemize}
+\subsection{Propriet\`a unione e intersezione}
+\begin{itemize}
+\item Idempotenza: $A\cap A=A$ e $A\cup A=A$
+\item Commutativit\`a.
+\item Associativit\`a. 
+\item Distributivit\`a: $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
+\item $A\cap\emptyset=\emptyset$, $A\cup\emptyset=A$, $A\cap\Omega=A$, $A\cap\Omega=\Omega$
+\end{itemize}
+\subsection{Leggi di De Morgan} 
+\begin{itemize}
+\item $(A\cup B)^c=A^c\cap B^c$
+\item $(A\cap B)^c=A^c\cup B^c$
+\end{itemize}
+\subsection{Operazioni per gruppi di insiemi}
+Si supponga di avere un numero finito di insiemi $A_1, A_2, \cdots, A_n$.
+\begin{itemize}
+\item L'unione viene indicata con $\bigcup\limits_{i=1}^nA_i$.
+\item  l'intersezione: $\bigcap\limits_{i=1}^nA_i$
+\end{itemize}
+\subsubsection{Regole di De Morgan} 
+\begin{itemize}
+\item $(\bigcup\limits_{i=1}^nA_i)^c=\bigcap\limits_{i=1}^nA_i^c$
+\item $(\bigcap\limits_{i=1}^nA_i)^c=\bigcup\limits_{i=1}^nA_i^c$
+\end{itemize}
+\subsection{Successioni di insiemi}
+Le successioni di insiemi sono numerabili, contengono ovvero elementi pari al pi\`u ai numeri naturali. Ovvero esiste una funzione biettiva tra i numeri naturali e gli insiemi.Si 
+possono allora considerare:
+\begin{itemize}
+\item Unione $\bigcup\limits_{i=1}^\infty A_i$
+\item Intersezione $\bigcap\limits_{i=1}^\infty A_i$
+\end{itemize}
+Considerando una successione pi\`u che numerabile si descrive $\bigcap\limits_{\alpha\in\Lambda}A_\alpha$, dove $\Lambda$ \`e un insieme maggiore dei numeri naturali.
+\subsection{Considerazioni su sottoinsiemi}
+Siano $A,B\subseteq\Omega$, se $A\subseteq B$ $A\cap B=A$:
+\begin{itemize}
+\item $A\cup B=B$
+\item $B^c=\Omega\backslash B\subseteq \Omega\backslash A=A^c$ 
+\item $A\cap B^c=\emptyset$
+\item $A^c\cap B=\Omega$
+\end{itemize}
+\section{Gli eventi}
+I potenziali eventi sono sottoinsiemi dell'insieme spazio campionario. Il numero di eventi \`e dato dalla cardinalit\`a dell'insieme delle parti dello spazio campionario:
+$2^{\#\Omega}$. Questo insieme viene detto insieme potenza, indicato con $P(\Omega)$ e contiene tutti i sottoinsiemi di $\Omega$. Gli eventi sono gli elementi dell'insieme
+potenza.
+\subsection{Propriet\`a}
+Una classe $\mathcal{A}$ di parti di un insieme $\Omega$ ($\mathcal{A}\subseteq P(\Omega)$) \`e detta trib\`u (o $\sigma$-algebra) se:
+\begin{itemize}
+\item $\Omega\in \mathcal{A}$
+\item Deve essere chiusa rispetto all'operazione complementare se $A\in \mathcal{A}$ allora $A^c\in \mathcal{A}$.
+\item $\{A_i\}_{i=1}^{+\infty}$ tale che $A_i\in \mathcal{A}\Rightarrow \bigcup\limits_{i=1}^{+\infty}A_i\in \mathcal{A}$ (metto in successione infinita ogni combinazione di elementi di $\mathcal{A}$).
+\end{itemize}
+Un algebra \`e una $\sigma$-algebra la cui terza propriet\`a cambia in: $\{A_i\}_{i=1}^{n}$ tale che $A_i\in \mathcal{A}\Rightarrow \bigcup\limits_{i=1}^nA_i\in \mathcal{A}$. Una $\sigma$-algebra
+\`e sempre un'algebra. La pi\`u piccola trib\`u \`e $\mathcal{A_1}=\{\emptyset,\Omega\}$. Una trib\`u generata da un'insieme di partenza \`e detta trib\`u generata da tale insieme. 
+\subsection{Definizione}
+Un evento \`e un elemento della trib\`u che viene utilizzata. 

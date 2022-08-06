@@ -1,0 +1,29 @@
+\chapter{Bayes}
+\section{Formule di Bayes}
+Si supponga di avere uno spazio probabilizzato e si vada a considerare due eventi con probabilit\`a strettamente positive: $A,B: Pr(A)>0, Pr(B)>0$. Si pu\`o pertanto definire
+$Pr(A|B)=\frac{Pr(A\cap B)}{Pr(B)}\Rightarrow Pr(A\cap B)=Pr(A|B)Pr(B)$ e $Pr(B|A)=\frac{Pr(A|\cap B)}{Pr(A)}\Rightarrow Pr(B|A)Pr(A)=Pr(A\cap B)$, ovvero $Pr(B|A)Pr(A)=Pr(A|B)Pr(B)$, ovvero $Pr(B|A)=\frac{Pr(A|B)Pr(B)}{Pr(A)}$.
+\begin{equation}
+Pr(B|A)=\dfrac{Pr(A|B)Pr(B)}{Pr(A)}
+\end{equation}
+\begin{equation}
+Pr(A|B)=\dfrac{Pr(B|A)Pr(A)}{Pr(B)}
+\end{equation}
+Si pu\`o passare da una probabilit\`a condizionata al suo opposto utilizzando il rapporto tra le probabilit\`a dei due eventi.
+\section{Teorema di Bayes}
+Si reintroduca una partizione. Si supponga di avere $(\Omega,\mathcal{A},Pr)$ e $\{A_i\}_{i=1}^{+\infty}$ partizione di $\Omega$ tale che $A_i\in\mathcal{A}\;\;\forall 
+i,Pr(A_i)>0$, dato $B\in\mathcal{A}$, $PR(B)>0$, ora si pu\`o calcolare $Pr(A_i|B)=Pr(B|A_i)\frac{Pr(A_i)}{Pr(B)}$. Ora si va a calcolare il denominatore attraverso il teroema 
+delle probabilit\`a totali, ovvero 
+\begin{equation}
+Pr(A_i|B)=\dfrac{Pr(B|A_i)Pr(A_i)}{\sum\limits_{j=i}^{+\infty}Pr(B|A_j)Pr(A_j)}
+\end{equation}
+Dove $Pr(B|A_i)$ viene indicata con verosimilianza (risultati degli esperimenti), $Pr(A_i)$, la conoscenza a priori e $Pr(A_i|B)$ la conoscenza a posteriori. 
+\chapter{Indipendenza stocastica}
+Si supponga di avere due eventi $A, B$, con $Pr(B)>0$ e di considerare $Pr(A|B)=\frac{Pr(A\cap B)}{Pr(B)}$ si supponga che $Pr(A|B)=Pr(A)$, questo fatto vuol dire che 
+l'informazione $B$ non modifica la misura di incertezza $A$, ovvero non ha aggiunto alcuna informazione. Quando ci\`o accade si dice che i due eventi sono stocasticamente 
+indipendenti. 
+\subsubsection{Definizione}
+Se $Pr(A|B)=Pr(A)$ quando $Pr(B)>0$ allora $A$ e $B$ sono stocasticamente indipendenti. Questo concetto \`e fortemente legao alla misura di probabilit\`a.
+\section{Eventi stocasticamente indipendenti}
+\subsubsection{Definizione}
+So consideri $(\Omega,\mathcal{A},Pr)$ e $\{A_i\}_{i=1}^n:A_i\in \mathcal{A}\forall i$ tali eventi sno stra loro stocasticamente indipendenti se e solo se $Pr(A_{i_1}\cap A_{i_2}\cap
+A_{i_k})=Pr(A_{i_1})Pr(A_{i_2})Pr(A_{i_k})$, $\forall i_1<i_2<\cdots<i_k\le n$ $\forall k=2,\cdots, n$.

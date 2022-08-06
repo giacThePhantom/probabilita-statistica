@@ -1,0 +1,36 @@
+\chapter{Dipendenza tra variabili aleatorie}
+\section{Discrete}
+\subsection{Funzione di probabilit\`a condizionata}
+$Pr(\{Y=y\}|\{X=x\})=\frac{Pr(\{Y=y\}\cap\{X=x\})}{P(\{X=x\})}$, vera se $Pr(\{X=x\})>0$. 
+\subsubsection{Definizione}
+$Pr(y|x)=\frac{P_{X,Y}(x, y)}{P_X(x)}$. Per ogni valore di $x$ fissato questa descrive una funzione di probabilit\`a in quanto non \`e negativa perch\`e rapporto tra 
+probabilit\`a, inoltre $\sum\limits_{y\in\mathbb{R}_Y}P_{Y|X}(y|x)=\sum\limits_{y\in\mathbb{R}_Y}\frac{P_{X,Y}(x, y)}{P_X(x)}=\frac{1}{P_X(x)}\sum\limits_{y\in\mathbb{R}_Y}
+P_{X,Y}(x, y)=\frac{P_X(x)}{P_X(x)}=1$. Per "tornare indietro" necessito della funzione condizionata e la marginale condizionante. 
+\subsubsection{Notazione}
+$(X,Y)\sim P_{X,Y}(x, y)$, si consideri $Y|X=x\sim P_{Y|X}(y|x)$ \`e una variabile aleatoria. 
+\subsection{Indipendenza stocastica}
+Si deve considerare $\frac{P_{x, Y}(X, Y)}{P_x(x)}=P_y(y)$. Le due variabili aleatorie sono stocasticamente indipendenti se e solo se $P_{X,Y}(x, y)=P_X(x)P_Y(y)\;\;\forall (x, 
+y)$. 
+\subsection{Valore atteso condizionato}
+Si supponga la variabile aleatoria $Y\sim P_Y(y)$, il suo valore atteso \`e $\mathbb{E}(Y)=\sum\limits_{\mathbb{R}_Y}yPr(y)$, il valore atteso $\mathbb{E}(Y|X=x)=\sum
+\limits_{\mathbb{R}_Y}yP_{Y|X}(y|x)$, mentre la varianza $\mathbb{V}ar(Y|X=x)=\sum\limits_{x\in R_X}(x-\mathbb{E}(X|Y=y))^2p_{X|Y}(x,y)$. 
+\subsection{Valore atteso del valore atteso condizionato}
+Si noti come $\mathbb{E}(X|Y=y)$ \`e una variabile aleatoria al variare di $y$. Si noti come $\mathbb{E}(\mathbb{E}(X|Y))=\sum\limits_{y\in R_Y}[\sum\limits_{x\in R_Y}xp_{X|Y}
+(x|y)]p_Y(y)=\sum\limits_{y\in R_Y}\sum\limits_{x\in R_X}xp_{X|Y}p_Y(y)=\sum\limits_{y\in R_Y}\sum\limits_{x\in R_X}xp_{X-Y}(x,y)=\sum\limits_{x\in R_X}xp_{X}(x)=\mathbb{E}(X)$.
+\section{Varianza condizionata}
+$\mathbb{V}ar(Y|X=x)=h(x)$, pertanto $\mathbb{E}(h(X))=\mathbb{E}_X(\mathbb{V}ar(Y|X))$.
+\subsection{Formula della decomposizione della varianza}
+$\mathbb{V}ar(Y)=\mathbb{E}_X(\mathbb{V}ar(Y|X)+\mathbb{V}ar_X(\mathbb{E}(Y|X))$.
+\subsubsection{Dimostrazione}
+La varianza di $Y$ \`e $\mathbb{V}ar(Y)=\sum\limits_{j=1}^J(y_j-\mathbb{E}(Y))^2p_y(y_j)=\sum\limits_{j=1}^J(y_j-\mathbb{E}(Y))^2\sum\limits_{i=1}^Ip_{X,Y}(x_i, y_j)=
+\sum\limits_{j=1}^J\sum\limits_{i=1}^I(y_j-\mathbb{E}(Y))^2p_{X,Y}(x_i, y_j)=\sum\limits_{j=1}^J\sum\limits_{i=1}^I(y_j-\mathbb{E}(Y|X=x_i)+\mathbb{E}(Y|X=x_i)-\mathbb{E}
+(Y))^2p_{X,Y}(x_i, y_j)=\sum\limits_{j=1}^J\sum\limits_{i=1}^I(y_j-\mathbb{E}(Y|X=x_i))^2p_{X,Y}(x_i, y_j)+\sum\limits_{j=1}^J\sum\limits_{i=1}^I(\mathbb{E}(Y|X=x_i)-\mathbb{E}
+(Y))^2p_{X,Y}(x_i, y_j)+\sum\limits_{j=1}^J\sum\limits_{i=1}^I2(y_j-\mathbb{E}(Y|X=x_i))(\mathbb{E}(Y|X=x_i)-\mathbb{E}(Y))p_{X,Y}(x_i, y_j)$. Si consideri ora il terzo 
+elemento $\sum\limits_{i=1}^I(\mathbb{E}(Y|X=x_i)-\mathbb{E}(Y))[\sum\limits_{j=1}^J(y_i-\mathbb{E}(Y|X=x_i))p_{Y|X}(y_j|x_i)]p_x(x_i)=0$ in quanto momento primo centrato, si 
+pu\`o riscrivere $p_{X,Y}(x,y)=p_{Y|X}(y|x)p_x(x)$. Ora pertanto si consideri il primo elemento $\sum\limits_{i=1}^I[\sum\limits_{j=1}^J(y_j-\mathbb{E}(Y|X=x_i))^2p_{Y|X}(y_j, 
+x_i)]p_x(x_i)=\sum\limits_{i=1}^I\mathbb{V}ar(Y|X=x_i)p_x(x_i)=\mathbb{E}(\mathbb{V}ar(Y|X))$. Si consideri ora il secondo elemento $\sum\limits_{i=1}^I[\sum\limits_{j=1}
+(\mathbb{E}(Y|X=x_i)-\mathbb{E}(Y))^2p_{Y|X}(y_j,x_i)]p_x(x_i)=\sum\limits_{i=1}^I(\mathbb{E}(Y|X=x_i)-\mathbb{E}(Y))^2[\sum\limits_{j=1}p_{Y|X}(y_j,x_i)]p_x(x_i)=\sum
+\limits_{i=1}^I(\mathbb{E}(Y|X=x_i)-\mathbb{E}(Y))^2p_x(x_i)=\mathbb{V}ar(\mathbb{E}(Y|X))$.\\
+Si pu\`o definire un indice, chiamato indice rapporto di correlazione $0\le\eta^2_{Y|X}=\frac{\mathbb{V}ar(\mathbb{E}(Y|X))}{\mathbb{V}ar(Y)}\le 1$, se l'indice vale zero \`e
+il caso peggiore di previsione.\\
+La varianza tra i gruppi \`e la varianza del valore atteso della condizionata, ovvero quanto le medie condizionate cambiano al variare della $X$.

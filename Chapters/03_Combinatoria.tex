@@ -1,0 +1,65 @@
+\chapter{Calcolo combinatorio}
+Il calcolo combinatorio si occupa di studiare l’esistenza, la costruzione, l’enumerazione e esamina le proprietà di configurazioni che soddisfano delle 
+particolari condizioni. Si considerino $S_1, S_2,\cdots, S_r$ $r$ insiemi di cardinalit\`a $n_1, n_2,\cdots,n_r$ formati da elementi distinti. Si consideri il 
+loro prodotto cartesiano $\Omega_r=S_1\times S_2\times\cdots\times S_r=\{(s_1,s_2,\cdots, S_3):s_1\in S_1,s_2\in S_2,\cdots,s_r\in S_r\}$. 
+\section{Disposizioni con ripetizione}
+Le disposizioni con ripetizione indicano il numero di $r$-uple che sono contenute nell'insieme $\Omega_r$. Poich\`e da $S_n$ si possono scegliere $n_n$ elementi
+allora il numero complessivo di elementi che sono contenuti \`e $n_1\cdot n_2\cdots n_r$. In particolare se $S_1=S_2=\cdots=S_r$ e $n_i\;\;\forall i\le r$ 
+allora il numero di $r$-uple sar\`a $n^r$.
+\subsubsection{Definizione}
+Dato un insieme $S=\{a_1,a_2,\cdots, a_n\}$ formato da $n$ oggetti distinti il numero di allineamenti che si possono formare con $r$ elementi scelti tra gli $n
+$,ritenendo diversi due allineamenti se differiscono per almeno un elemento, per l'ordine in cui sono scelti o perch\`e uno stesso elemento compare un numero 
+diverso di volte, \`e dato da:
+\begin{equation}
+D^\star_{n,r}=n^r
+\end{equation}
+Ogni allineamento si dice disposizione con ripetizione di $n$ oggetti in classe $r$.
+\section{Disposizioni senza rpetizione}
+Le disposizioni senza ripetizione (o semplici), indicano il numero di allineamenti che si possono formare con gli oggetti contenuti in $S=\{a_1,a_2,\cdots, a_n
+\}$ presi a gruppi di $1\le r\le n$ ma in modo che uno stesso oggetto non appaia pi\`u di una volta.
+\subsubsection{Definizione}
+Dato un insieme $S=\{a_1,a_2,\cdots, a_n\}$ formato da $n$ oggetti distinti il numero di allineamenti che si possono formare con $1\le r\le n$ elementi scelti
+tra gli $n$, ritenendo diversi due allineamenti se differiscono per almeno un elemento o perch\`e gli stessi oggetti si susseguono in modo diverso \`e dato da:
+\begin{equation}
+D+{n,r}=n(n-1)\cdots(n-r+1)=\dfrac{n!}{(n-r)!}
+\end{equation}
+\section{Permutazioni}
+Le permutazioni sono un caso particolare delle disposizioni senza ripetizione in cui $r=n$ e possono differire solo per l'ordine in cui si susseguono gli 
+oggetti.
+\subsubsection{Definizione}
+Dato un insieme $S=\{a_1,a_2,\cdots, a_n\}$ di $n$ oggetti distinti, il numero degli allineamenti che si possono formare con tutti essi, ritenendo diversi due 
+allineamenti perchè gli oggetti si susseguono in ordine diverso, è dato da $n!$ (si pone $0! = 1$).
+\begin{equation}
+P_n=D_{n,n}=n!
+\end{equation}
+\section{Combinazioni}
+Le combinazioni indicano il numero di disposizioni che differiscono unicamente se gli allineamenti contengono elementi diversi, il loro ordine risutla \\
+ininfluente.
+\subsubsection{Definizione}
+Dato un insieme $S=\{a_1,a_2,\cdots, a_n\}$ di $n$ oggetti distinti, il numero degli allineamenti che si possono formare con $1\le r\le n$ oggetti scelti tra 
+gli $n$, ritenendo diversi due allineamenti solo perché contengono oggetti differenti, \`e dato da:
+\begin{equation}
+C_{n,r}=\dfrac{D_{n,r}}{r!}=\binom{n}{r}
+\end{equation}
+Ogni allineamento si dice combinazione senza ripetizione di $n$ oggetti in classe $r$.
+\section{Cardinalit\`a delle parti di un insieme finito}
+\subsubsection{Enunciato}
+Sia $S=\{a_1,a_2,\cdots, a_n\}$ un insieme di $n$ oggetti distinti, allora $\#P(S)=2^n$.
+\subsubsection{Dimostrazione}
+Si dimostri per induzione:
+\begin{itemize}
+\item Per $n=0$, $P(\emptyset)=\{\emptyset\}$ e ha cardinalit\`a $2^0=1$.
+\item Per $n=1$, $P(\{a\})=\{\emptyset,\{a\}\}$ e ha cardinalit\`a $2^1=1$.
+\item Per $n=2$, $P(\{a_1,a_2\})=\{\emptyset, \{a_1\},\{a_2\},\{a_1,a_2\}\}$ e ha cardinalit\`a $2^2=4$.
+\end{itemize}
+Ora si assuma che $\#P(S_k)=2^k$ e si mostri che vale $\#P(S_{k+1})=2^{k+1}$. Si noti che i sottoinsiemi di $S_{k+1}$ sono divisi in due categorie: quelli che 
+contengono $a_{k+1}$, si chiamino $A$ e quelli che non la contengono, si chiamino $B$. Gli insiemi $A$ sono $2^k$ per ipotesi di induzione, rimane da mostrare 
+che gli insiemi $B$ siano $2^k$. A questo scopo si noti come ogni insieme $B$ sia esprimibile come $A\cup \{a_{k+1}\}$, ovvero esiste una funzione biettiva del 
+tipo $A\rightarrow A\cup\{a_{k+1}\}$, che implica che gli insiemi $B$ siano $2^k$. In concluionse $2^k+2^k=2^{k+1}$.
+\subsection{Cardinalit\`a dell'insieme delle parti e combinazioni}
+Si notino le seguenti:
+\begin{itemize}
+\item $2^n=\sum\limits_{r=0}^n\binom{n}{r}$
+\item $\binom{m+n}{r}=\sum\limits_{i=0}^r\binom{m}{i}\cdot\binom{n}{r-i}$
+\item $\binom{n}{r}=\frac{n!}{r!(n-r)!}=\binom{n}{n-r}$
+\end{itemize} 

@@ -1,0 +1,90 @@
+\BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Esperimento casuale o esperimento aleatorio}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Spazio campionario}{section.1.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Insiemistica}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{Propriet\340 unione e intersezione}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{Leggi di De Morgan}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.3}{Operazioni per gruppi di insiemi}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.4}{Successioni di insiemi}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.5}{Considerazioni su sottoinsiemi}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{Gli eventi}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.3.1}{Propriet\340}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.2}{Definizione}{section.1.3}% 12
+\BOOKMARK [0][-]{chapter.2}{Probabilit\340}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Spazio probabilizzabile}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.2}{La funzione di probabilit\340}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Assiomi di Kolmogorov}{section.2.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Spazio probabilizzato}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{Regole di calcolo}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{Un evento implica un altro}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.3}{Disuguaglianza di Bonferroni}{section.2.3}% 20
+\BOOKMARK [1][-]{section.2.4}{Limiti e probabilit\340}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.5}{Costruzione della funzione di probabilit\340}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.6}{Prodotto di una famiglia di trib\371}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.6.1}{Prodotto di una famiglia di uno spazio probabilizzato}{section.2.6}% 24
+\BOOKMARK [0][-]{chapter.3}{Calcolo combinatorio}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Disposizioni con ripetizione}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Disposizioni senza rpetizione}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Permutazioni}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Combinazioni}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Cardinalit\340 delle parti di un insieme finito}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.5.1}{Cardinalit\340 dell'insieme delle parti e combinazioni}{section.3.5}% 31
+\BOOKMARK [0][-]{chapter.4}{Probabilit\340 sui reali}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Costruzione di uno spazio probabilizzato su uno spazio campionario pi\371 che numerabile}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.1.1}{Trib\371 Boreliana}{section.4.1}% 34
+\BOOKMARK [1][-]{section.4.2}{Misura di probabilit\340}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.2.1}{Funzione di distribuzione}{section.4.2}% 36
+\BOOKMARK [0][-]{chapter.5}{Probabilit\340 condizionale}{}% 37
+\BOOKMARK [1][-]{section.5.1}{Spazio di probabilit\340 condizionale}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{teorema delle probabilit\340 totali}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{Enuncitato}{section.5.2}% 40
+\BOOKMARK [1][-]{section.5.3}{Teorema di Bayes}{chapter.5}% 41
+\BOOKMARK [0][-]{chapter.6}{Indipendenza stocastica}{}% 42
+\BOOKMARK [1][-]{section.6.1}{Indipendenza di due eventi}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.2}{Indipendenza di n eventi}{chapter.6}% 44
+\BOOKMARK [1][-]{section.6.3}{Trib\371 indipendenti}{chapter.6}% 45
+\BOOKMARK [0][-]{chapter.7}{Variabili aleatorie}{}% 46
+\BOOKMARK [1][-]{section.7.1}{Variabili aleatorie e trib\371}{chapter.7}% 47
+\BOOKMARK [2][-]{subsection.7.1.1}{Primo teorema sul cambio di trib\371}{section.7.1}% 48
+\BOOKMARK [2][-]{subsection.7.1.2}{Secondo teorema sul cambio di trib\371}{section.7.1}% 49
+\BOOKMARK [1][-]{section.7.2}{Variabili aleatorie e funzioni}{chapter.7}% 50
+\BOOKMARK [2][-]{subsection.7.2.1}{Definizione funzioni di probabilit\340}{section.7.2}% 51
+\BOOKMARK [1][-]{section.7.3}{Variabili aleatorie discrete}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.4}{Distribuzioni particolari}{chapter.7}% 53
+\BOOKMARK [2][-]{subsection.7.4.1}{Distribuzione binomiale}{section.7.4}% 54
+\BOOKMARK [2][-]{subsection.7.4.2}{Distribuzione bernoulliana}{section.7.4}% 55
+\BOOKMARK [2][-]{subsection.7.4.3}{Distribuzione di Poisson}{section.7.4}% 56
+\BOOKMARK [2][-]{subsection.7.4.4}{Distribuzione geometrica}{section.7.4}% 57
+\BOOKMARK [2][-]{subsection.7.4.5}{Distribuzione binomiale negativa}{section.7.4}% 58
+\BOOKMARK [1][-]{section.7.5}{Variabili aleatorie continue}{chapter.7}% 59
+\BOOKMARK [2][-]{subsection.7.5.1}{Funzione di densit\340}{section.7.5}% 60
+\BOOKMARK [2][-]{subsection.7.5.2}{Funzione di ripartizione}{section.7.5}% 61
+\BOOKMARK [1][-]{section.7.6}{Distribuzioni continue notevoli}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.6.1}{Distribuzione uniforme}{section.7.6}% 63
+\BOOKMARK [2][-]{subsection.7.6.2}{Distribuzione normale o gaussiana}{section.7.6}% 64
+\BOOKMARK [0][-]{chapter.8}{Valori notevoli di variabili aleatorie}{}% 65
+\BOOKMARK [1][-]{section.8.1}{Valore atteso}{chapter.8}% 66
+\BOOKMARK [1][-]{section.8.2}{Trasformazioni di variabili aleatorie}{chapter.8}% 67
+\BOOKMARK [1][-]{section.8.3}{Momenti}{chapter.8}% 68
+\BOOKMARK [2][-]{subsection.8.3.1}{Momenti non centrati}{section.8.3}% 69
+\BOOKMARK [2][-]{subsection.8.3.2}{Momenti centrati}{section.8.3}% 70
+\BOOKMARK [2][-]{subsection.8.3.3}{Varianza}{section.8.3}% 71
+\BOOKMARK [2][-]{subsection.8.3.4}{Coefficiente di variazione}{section.8.3}% 72
+\BOOKMARK [2][-]{subsection.8.3.5}{Momento terzo centrato}{section.8.3}% 73
+\BOOKMARK [2][-]{subsection.8.3.6}{Momento quarto centrato}{section.8.3}% 74
+\BOOKMARK [1][-]{section.8.4}{Variabile aleatoria degenere}{chapter.8}% 75
+\BOOKMARK [0][-]{chapter.9}{Variabili aleatorie multidimensionali}{}% 76
+\BOOKMARK [1][-]{section.9.1}{Boreliani}{chapter.9}% 77
+\BOOKMARK [1][-]{section.9.2}{Variabili aleatorie discrete bidimensionali}{chapter.9}% 78
+\BOOKMARK [1][-]{section.9.3}{Funzione di ripartizione congiunta}{chapter.9}% 79
+\BOOKMARK [1][-]{section.9.4}{Variabili aleatorie bivariate continue}{chapter.9}% 80
+\BOOKMARK [2][-]{subsection.9.4.1}{Densit\340}{section.9.4}% 81
+\BOOKMARK [2][-]{subsection.9.4.2}{Relazione tra densit\340 congiunta e marginali}{section.9.4}% 82
+\BOOKMARK [0][-]{chapter.10}{Dipendenza tra variabili aleatorie}{}% 83
+\BOOKMARK [1][-]{section.10.1}{Discrete}{chapter.10}% 84
+\BOOKMARK [2][-]{subsection.10.1.1}{Funzione di probabilit\340 condizionata}{section.10.1}% 85
+\BOOKMARK [2][-]{subsection.10.1.2}{Indipendenza stocastica}{section.10.1}% 86
+\BOOKMARK [2][-]{subsection.10.1.3}{Valore atteso condizionato}{section.10.1}% 87
+\BOOKMARK [1][-]{section.10.2}{Si ridica}{chapter.10}% 88
+\BOOKMARK [1][-]{section.10.3}{Varianza condizionata}{chapter.10}% 89
+\BOOKMARK [2][-]{subsection.10.3.1}{Formula della decomposizione della varianza}{section.10.3}% 90

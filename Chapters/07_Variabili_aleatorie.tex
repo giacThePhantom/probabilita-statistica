@@ -1,0 +1,118 @@
+\chapter{Variabili aleatorie}
+In molte occasioni lo spazio campionario \`e composto da elementi di natura non numerica. Spesso in questo caso sono oggetto di studio le conseguenze dell'esperimento, 
+valutabili numericamente. Per legare l'esperimento e le sue conseguenze numeriche, e pertanto gli spazi campionari \`e necessario introdurre le variabili aleatorie.
+\subsubsection{Definizione}
+Sia dato uno spazio probabilizzabile $(\Omega,\mathcal{A})$, si dice variabile aleatoria ogni funzione a valori reali definita in $\Omega$, con $y=X(w)$ tale che $\{w\in\Omega:
+X(w)\le x\}\in\mathcal{A}$. Per ogni valore reale $x$.
+\subsubsection{Osservazioni}
+\begin{itemize}
+\item Nella definizione la probabilit\`a non ha alcun ruolo e che quando $\mathcal{A}$ \`e la classe dei sottoinsiemi di $\Omega$ la condizione della definizione \`e sempre 
+soddisfatta.
+\item Per rendersi conto della necessit\`a di imporre alla funzione $X(w)$ la condizione sopra descritta basta considerare che intendendo assegnare una probabilit\`a agli 
+insiemi $\{w\in\Omega:X(w)\le x\}$ per ogni reale $x$ ed avendo probabilizzato la classe $\mathcal{A}$, occorre che tali insiemi appartengano a $\mathcal{A}$.
+\end{itemize}
+\section{Variabili aleatorie e trib\`u}
+\subsection{Primo teorema sul cambio di trib\`u}
+Siano $\tilde{\Omega}$ e $\Omega$ due insiemi arbitrarie  sia $X:\tilde{\Omega}\rightarrow\Omega$ una funzione, se $\mathcal{A}$ \`e una trib\`u su $\Omega$ allora $
+\tilde{\mathcal{A}}=\{X*{-1}(A):A\in\mathcal{A}\}$ \`e una trib\`u su $\tilde{\Omega}$.
+\subsubsection{Dimostrazione}
+\begin{itemize}
+\item $X^{-1}(\Omega)=\tilde{\Omega}$.
+\item $X^{-1}(\Omega\backslash A)=\tilde{\Omega}\backslash X^{-1}(A)$.
+\item $X^{-1}(\bigcup\limits_{i=1}^\infty A_i)=\bigcup\limits_{i=1}^\infty X^{-1}(A_i)$
+\end{itemize}
+\subsection{Secondo teorema sul cambio di trib\`u}
+Siano $\tilde{\Omega}$ e $\Omega$ due insiemi arbitrarie  sia $X:\tilde{\Omega}\rightarrow\Omega$ una funzione, se $\tilde{\mathcal{A}}$ \`e una trib\`u su $\tilde{\Omega}$ 
+allora $\mathcal{A}=\{A\subseteq\Omega: X^{-1}(A)\in\tilde{\mathcal{A}}\}$ \`e una trib\`u su $\Omega$.
+\subsubsection{Dimostrazione}
+\begin{itemize}
+\item Siccome $\tilde{\Omega}\in\tilde{\mathcal{A}}$ e $\tilde{\Omega}=X^{-1}(\Omega)$ allora $\Omega\in\mathcal{A}$.
+\item Si supponga che $A\in\mathcal{A}$ allora $X^{-1}(A)\in\tilde{\mathcal{A}}$ che implica $X^{-1}(\Omega\backslash A)=\tilde{\Omega}\backslash X^{-1}(A)\in
+\tilde{\mathcal{A}}$ e quindi $\Omega\backslash A\in\mathcal{A}$.
+\item Si suppongano $A_1,A_2,\cdots\in\mathcal{A}$. Pertanto $X^{-1}(A_1), X^{-1}(A_2),\cdots, \in\tilde{\mathcal{A}}$, da cui $X^{-1}(\bigcup\limits_{i=1}^\infty A_i)=\bigcup
+\limits_{i=1}^\infty X^{-1}(A_i)\in\tilde{\mathcal{A}}$, perci\`o $\bigcup\limits_{i=1}^\infty A_i\in\mathcal{A}$.
+\end{itemize}
+\section{Variabili aleatorie e funzioni}
+Ogni funzione continua e monotona crescente oppure decrescente $f:(\mathbb{R}, \mathcal{B}(\mathbb{R}))\rightarrow(\mathbb{R}, \mathcal{B}(\mathbb{R}))$ \`e una variabile 
+aleatoria.
+\subsection{Definizione funzioni di probabilit\`a}
+Il valore che assume la funzione $y=X(w):\Omega\rightarrow\mathbb{R}$ in corrispondenza di un esperimento \`e aleatorio in quanto dipende dal risultato dell'esperimento, ci si 
+chieder\`a con quale probabilit\`a la funzione $X(w)$ assume un nell'intervallo $]a,b]$, ovvero la probabilit\`a di $a<X\le b=Pr(X\in]a,b]),\;\;-\infty\le a<b<\infty$.
+A tale scopo si osservino l'intervallo $]a,b]$ e l'evento $A=\{w\in\Omega: a<X(w)\le b\}\in\mathcal{A}$, essi sono equivalenti in quanto quando si verifica $A$ allora 
+$X\in]a,b]$ e viceversa. Dato che ad $A$ \`e assegnata $Pr(A)$, si potr\`a porre per ogni $a<b$, $Pr_X(]a,b])=Pr(X\in]a,b])=Pr(\{w\in\Omega: a<X(w)\le b\})$. Questa funzione 
+di probabilit\`a \`e nota come come distribuzione della variabile aleatoria $X$ e mediante essa \`e possibile determinare $Pr_X(B)=Pr(X\in B)$ per ogni $B\in\mathcal{B}
+(\mathbb{R})$.
+\subsubsection{Definizione}
+Una variabile aleatoria o casuale in uno spazio campionario $\Omega$ \`e una qualunque funzione con valori nei numeri reali la cui controimmagine \`e un evento di $\Omega$. Se
+a diversi eventi corrisponde lo stesso numero $a$, $Pr(X=a)=Pr(\{w\in\Omega|X(w)=a\})$. Pi\`u in generale, per $a<b$, $Pr(a<X\le b)=Pr(\{w\in\Omega|a<X(w)\le b\})$.
+\section{Variabili aleatorie discrete}
+Sia $X$ una variabile discreta che assume un numero finito di valori reali $X=\{x_1,x_2,\cdots, x_n\}$, l'insieme dei valori che $X$ pu\`o assumere \`e detto supporto della
+variabile casuale. Si assegni ad ogni valore di $X$ una probabilit\`a: $P(X=x_i)=\{w\in\Omega|X(w)=x_i\}$ o $p(x_i)$. La funzione $p(\cdot)$ avr\`a pertanto le seguenti 
+propriet\`a:
+\begin{itemize}
+\item $0\le p(x_i)\le 1\;\;\forall x_i\in\{x_1,\cdots, x_n\}$.
+\item $\sum\limits_{i=1}^{n}p(x_i)=1$.
+\end{itemize}
+Questa funzione verr\`a pertanto chiamata funzione di probabilit\`a della variabile discreta $X$. 
+\subsubsection{Variabile aletoria con infiniti valori}
+Una variabile aleatoria discreta pu\`o assumere una quantit\`a al pi\`u numerabile di valori, come nell'esempio nella distribuzione geometrica, in cui $P(X=x_i)=(1-p)^{i-1}p$, 
+ovvero, in una sequenza di prove binarie determina la probabilit\`a che il primo risultato sia alla prova $i$. \`E immediato notare che $\sum\limits_{i=1}^\infty p(x_i)=1$.
+\subsubsection{Funzione di ripartizione}
+Si introduce la funzione di ripartizione come la funzione nella forma $F(x)=Pr(X\le x)=\sum\limits_{x_i<x}p(x_i)$. Questa funzione \`e tale che:
+\begin{itemize}
+\item non \`e decrescente (dimostrazione banale).
+\item $F(x)=0$ se $x=\min(x_i)$ e $F(x)=1$ se $x=\max(x_i)$
+\item $F(x)$ \`e continua a destra, ovvero la funzione presenta dei salti nei punti $x$ in cui $Pr(X=x)>0$.
+\end{itemize}
+\section{Distribuzioni particolari}
+\subsection{Distribuzione binomiale}
+Si consideri la classe di problemi in cui un esperimento elementare con due possibili risultati, successo e insuccesso, viene ripetuto indipendentemente $m$ volte e si chiede la probabilit\`a di ottenere $k$ 
+successi sapendo che la probabilit\`a di successo in ogni prova \`e $p$.  Si consideri lo spazio campionario $\Omega$ costituieto dalle $2^m$ sequenze di $f$ e $s$ di lunghezza $m$, viene definita la
+variabile casuale $B$ come $B(\Omega)=\{0,1,\cdots, m\}$, e si vuole determinare la probabilit\`a di $B$. SI deve calcolare la probabilit\`a dell'evento $A\subset \Omega$ costituito da tutte le seguenze con
+$k$ successi e $m-k$ insuccessi, $A$ possiede $\binom{m}{k}$ sequenze e la probabilit\`a di ognuna \`e data da $p^k(1-p=^{m-k}$. Se $B$ \`e una variabile aleatoria che si distribuisce in accordo alla 
+distribuzione binomiale allora si pu\`o dimostrare che $\mathbb{E}(B)=mp$, mentre $\sigma(B)=mp(1-p)$. Si indicher\`a con $B\sim Bin(m,p)$
+\subsection{Distribuzione bernoulliana}
+Nel caso particolare di una variabile binomiale con $m=1$, tale distribuzione viene chiamata bernoulliana $B\sim Ber(p)$. $\mathbb{E}=p$, mentre la varianza $\sigma=p(1-p)$. Data $B_i\sim Ber(p)\;\; i=1,
+\cdots, m$, $\sum\limits_{i=1}^mB_i\sim Bin(m,p)$.
+\subsection{Distribuzione di Poisson}
+Questa distribuzione studia cosa succede alla variabile aleatoria quando il numero di prove $m$ tende all'infinito e la probabilit\`a $\theta_m$ di successo decresce in modo che il prodotto $m\theta_m$ 
+tenda ad una costante, ovvero $\theta_m=\frac{\lambda}{m}$. La risposta per un $m$ fissato viene fornita dalla distribuzione binomiale: $Pr(P=k)=\binom{m}{k}\frac{\lambda}{m}^k(1-\frac{\lambda}
+{m})^{-1}$. Facendo tendere $m$ all'infinito si ottiene $\lim\limits_{m\rightarrow\infty}\frac{m!}{m^k(m-k)!}\frac{\lambda}{k!}^k(1-\frac{\lambda}{m})^m(1-\frac{\lambda}{m})^{-k}=\frac{\lambda^ke^{-
+\lambda}}{k!}$. L'espressione trovata permette di trovare la probabilit\`a del numero di successi indicati nel parametro $k$ che avvengono in un numero infinito di tentativi. Viene chiamata variabile di Poisson
+e viene indicata con $P\sim Pois(\lambda)$, $Pr(P=k)=\frac{\lambda^ke^{-\lambda}}{k!}$.
+\subsubsection{Definire Poisson ricorsivamente}
+La distribuzione di Poisson pu\`o essere definita ricorsivamente nel seguente modo: $\begin{cases}Pr(X=k+1)=\frac{\lambda}{k+1}Pr(X=k)\\Pr(X=0)=e^{-\lambda}\end{cases}$.
+\subsection{Distribuzione geometrica}
+Questa distribuzione studia la probabilit\`a che il primo successo avvenga all'i-esimo tentativo: si pu\`o mostrare come data la variabile aleatoria $Y\sim Geo(p)$, si nota 
+come $Pr(Y=y)=(1-p)^{y-1}p$ e che $F_Y(y)=Pr(Y\le y)=\sum\limits_{i=1}^{[y]}(1-p)^{i-1}p=p\sum\limits_{i=0}^{[y]-1}(1-p)^i$. 
+\subsection{Distribuzione binomiale negativa}
+Questa distribuzione studia la probabilit\`a che in $x$ tentativi avvengano $r$ successi. $X\sim NBin(r, p)$. Si costruisce come sommatoria di distribuzioni geometriche. La sua
+funzione di probabilit\`a \`e:\\ $Pr(X=x)=\begin{cases}\binom{x-1}{r-1}p^r(1-p)^{x-r}&x\ge r\in\mathbb{Z}\\0&altrimenti\end{cases}$.
+\subsubsection{Distribuzioni binomiali e binomiali negative}
+Siano $X\sim Bin(n,p)$ e $Z\sim(r,p)$, allora $Pr(Z\ge r)=Pr(X\le n)$.
+\section{Variabili aleatorie continue}
+Si consideri ora $\Omega$ come uno spazio campionario infinito e la variabile ad esso associat\`a $Y(\Omega)$ \`e un sottoinsieme non numerabile dei numeri reali. In questo 
+caso si \`e in presenza di una variabile aleatoria continua. 
+\subsection{Funzione di densit\`a}
+Disponendo i dati in un grafo ad istogrammi separato per classi \`e naturale notare come aumentando indefinitamente il numero di queste ultime si formi una funzione $f(y)$ 
+chiamata funzione di densit\`a. Essendo l'area sotto tale curva la somma dei rettangolini contenuti in $[a.b]$ pari alla frequenza relativa dei campioni tra $a$ e $b$, e
+notando inoltre che l'area sottesa alla curva vale $1$, si ottiene che $Pr(a<Y\le b)=\int_a^bf(y)dy$. 
+\subsubsection{Propriet\`a}
+Del tutto analoghe al caso discreto:
+\begin{itemize}
+\item $f(y)\ge 0\forall y\in\mathbb{R}$.
+\item $\int_{-\infty}^{+\infty}f(y)dy=1$.
+\end{itemize}
+\subsection{Funzione di ripartizione}
+Si pu\`o pertanto definire la funzione di ripartizione per una variabile aleatoria continua come $F(y)=\int_{-\infty}^yf(t)dt$, da cui si ottiene che $Pr(a<Y\le b)=F(b)-F(a)=
+\int_{-\infty}^bf(t)dt-\int_{-\infty}^af(t)dt$. Se la funzione di ripartizione \`e continua allora ogni singoletto ha propriet\`a nulla, che implica che $Pr(a<Y\le b)=Pr(a<Y<
+ b)=Pr(a\le Y\le b)=Pr(a\le Y< b)$. Se la funzione di ripartizione \`e derivabile, la sua derivata \`e la funzione di densit\`a, pertanto $f(y)=\frac{dF(y}{dy}$, viceversa 
+ $F(y)=\int_{-\infty}^yf(t)dt$.
+\section{Distribuzioni continue notevoli}
+\subsection{Distribuzione uniforme}
+La funzione di densit\`a di questa distribuzione \`e $f(y)=\begin{cases}\frac{1}{b-a}&a\le y\le b\\0&altrimenti\end{cases}$.
+\subsection{Distribuzione normale o gaussiana}
+La funzione di densit\`a di questa distribuzione \`e $f(y;\mu, \sigma^2)=\frac{1}{\sigma\sqrt{2\pi}}e^{\frac{1}{2}(\frac{y-\mu}{\sigma})^2}$, dove $\mu$ indica il valore atteso
+e $\sigma^2$ la varianza. Si indicher\`a con $Y\sim \mathcal{N}(\mu, \sigma^2)$ tale distribuzione.
+\subsubsection{Standardizzazione}
+Indicata $Z\sim\mathcal{N}(0,1)$ come la distribuzione normale standard, qualsiasi altra distribuzione normale $Y$ di parametri $\mu$ e $\sigma^2$ \`e esprimibile come $Z=\frac{Y-\mu}{\sigma}$.

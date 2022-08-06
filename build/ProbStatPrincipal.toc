@@ -1,0 +1,129 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Esperimento casuale o esperimento aleatorio}{5}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Spazio campionario}{5}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Insiemistica}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Propriet\`a unione e intersezione}{6}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Leggi di De Morgan}{6}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Operazioni per gruppi di insiemi}{6}{subsection.1.2.3}
+\contentsline {subsubsection}{Regole di De Morgan}{6}{section*.2}
+\contentsline {subsection}{\numberline {1.2.4}Successioni di insiemi}{6}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Considerazioni su sottoinsiemi}{7}{subsection.1.2.5}
+\contentsline {section}{\numberline {1.3}Gli eventi}{7}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Propriet\`a}{7}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Definizione}{7}{subsection.1.3.2}
+\contentsline {chapter}{\numberline {2}Probabilit\`a}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Spazio probabilizzabile}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}La funzione di probabilit\`a}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Assiomi di Kolmogorov}{9}{subsection.2.2.1}
+\contentsline {subsubsection}{Conseguenze degli assiomi}{9}{section*.3}
+\contentsline {section}{\numberline {2.3}Spazio probabilizzato}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Regole di calcolo}{10}{subsection.2.3.1}
+\contentsline {subsubsection}{Probabilit\`a che l'evento non si verifichi}{10}{section*.4}
+\contentsline {subsubsection}{Probabilit\`a che si verifichi almeno un evento tra i due}{10}{section*.5}
+\contentsline {subsection}{\numberline {2.3.2}Un evento implica un altro}{10}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Disuguaglianza di Bonferroni}{11}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Limiti e probabilit\`a}{11}{section.2.4}
+\contentsline {subsubsection}{Dimostrazione}{11}{section*.6}
+\contentsline {section}{\numberline {2.5}Costruzione della funzione di probabilit\`a}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}Prodotto di una famiglia di trib\`u}{12}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Prodotto di una famiglia di uno spazio probabilizzato}{12}{subsection.2.6.1}
+\contentsline {chapter}{\numberline {3}Calcolo combinatorio}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Disposizioni con ripetizione}{13}{section.3.1}
+\contentsline {subsubsection}{Definizione}{13}{section*.7}
+\contentsline {section}{\numberline {3.2}Disposizioni senza rpetizione}{13}{section.3.2}
+\contentsline {subsubsection}{Definizione}{14}{section*.8}
+\contentsline {section}{\numberline {3.3}Permutazioni}{14}{section.3.3}
+\contentsline {subsubsection}{Definizione}{14}{section*.9}
+\contentsline {section}{\numberline {3.4}Combinazioni}{14}{section.3.4}
+\contentsline {subsubsection}{Definizione}{14}{section*.10}
+\contentsline {section}{\numberline {3.5}Cardinalit\`a delle parti di un insieme finito}{14}{section.3.5}
+\contentsline {subsubsection}{Enunciato}{14}{section*.11}
+\contentsline {subsubsection}{Dimostrazione}{15}{section*.12}
+\contentsline {subsection}{\numberline {3.5.1}Cardinalit\`a dell'insieme delle parti e combinazioni}{15}{subsection.3.5.1}
+\contentsline {chapter}{\numberline {4}Probabilit\`a sui reali}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Costruzione di uno spazio probabilizzato su uno spazio campionario pi\`u che numerabile}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Trib\`u Boreliana}{17}{subsection.4.1.1}
+\contentsline {subsubsection}{Definzione}{17}{section*.13}
+\contentsline {subsubsection}{Insiemi borelliani}{17}{section*.14}
+\contentsline {section}{\numberline {4.2}Misura di probabilit\`a}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Funzione di distribuzione}{18}{subsection.4.2.1}
+\contentsline {subsubsection}{Osservazione}{18}{section*.15}
+\contentsline {chapter}{\numberline {5}Probabilit\`a condizionale}{19}{chapter.5}
+\contentsline {subsubsection}{Definizione}{19}{section*.16}
+\contentsline {section}{\numberline {5.1}Spazio di probabilit\`a condizionale}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}teorema delle probabilit\`a totali}{19}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Enuncitato}{19}{subsection.5.2.1}
+\contentsline {subsubsection}{Dimostrazione}{20}{section*.17}
+\contentsline {section}{\numberline {5.3}Teorema di Bayes}{20}{section.5.3}
+\contentsline {subsubsection}{Dimostrazione}{20}{section*.18}
+\contentsline {chapter}{\numberline {6}Indipendenza stocastica}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Indipendenza di due eventi}{21}{section.6.1}
+\contentsline {subsubsection}{Definizione}{21}{section*.19}
+\contentsline {section}{\numberline {6.2}Indipendenza di n eventi}{21}{section.6.2}
+\contentsline {subsubsection}{Definizione}{21}{section*.20}
+\contentsline {section}{\numberline {6.3}Trib\`u indipendenti}{21}{section.6.3}
+\contentsline {chapter}{\numberline {7}Variabili aleatorie}{23}{chapter.7}
+\contentsline {subsubsection}{Definizione}{23}{section*.21}
+\contentsline {subsubsection}{Osservazioni}{23}{section*.22}
+\contentsline {section}{\numberline {7.1}Variabili aleatorie e trib\`u}{23}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Primo teorema sul cambio di trib\`u}{23}{subsection.7.1.1}
+\contentsline {subsubsection}{Dimostrazione}{24}{section*.23}
+\contentsline {subsection}{\numberline {7.1.2}Secondo teorema sul cambio di trib\`u}{24}{subsection.7.1.2}
+\contentsline {subsubsection}{Dimostrazione}{24}{section*.24}
+\contentsline {section}{\numberline {7.2}Variabili aleatorie e funzioni}{24}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Definizione funzioni di probabilit\`a}{24}{subsection.7.2.1}
+\contentsline {subsubsection}{Definizione}{24}{section*.25}
+\contentsline {section}{\numberline {7.3}Variabili aleatorie discrete}{25}{section.7.3}
+\contentsline {subsubsection}{Variabile aletoria con infiniti valori}{25}{section*.26}
+\contentsline {subsubsection}{Funzione di ripartizione}{25}{section*.27}
+\contentsline {section}{\numberline {7.4}Distribuzioni particolari}{25}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Distribuzione binomiale}{25}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Distribuzione bernoulliana}{26}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Distribuzione di Poisson}{26}{subsection.7.4.3}
+\contentsline {subsubsection}{Definire Poisson ricorsivamente}{26}{section*.28}
+\contentsline {subsection}{\numberline {7.4.4}Distribuzione geometrica}{26}{subsection.7.4.4}
+\contentsline {subsection}{\numberline {7.4.5}Distribuzione binomiale negativa}{26}{subsection.7.4.5}
+\contentsline {subsubsection}{Distribuzioni binomiali e binomiali negative}{27}{section*.29}
+\contentsline {section}{\numberline {7.5}Variabili aleatorie continue}{27}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Funzione di densit\`a}{27}{subsection.7.5.1}
+\contentsline {subsubsection}{Propriet\`a}{27}{section*.30}
+\contentsline {subsection}{\numberline {7.5.2}Funzione di ripartizione}{27}{subsection.7.5.2}
+\contentsline {section}{\numberline {7.6}Distribuzioni continue notevoli}{27}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Distribuzione uniforme}{27}{subsection.7.6.1}
+\contentsline {subsection}{\numberline {7.6.2}Distribuzione normale o gaussiana}{28}{subsection.7.6.2}
+\contentsline {subsubsection}{Standardizzazione}{28}{section*.31}
+\contentsline {chapter}{\numberline {8}Valori notevoli di variabili aleatorie}{29}{chapter.8}
+\contentsline {section}{\numberline {8.1}Valore atteso}{29}{section.8.1}
+\contentsline {subsubsection}{Valore atteso per variabili aleatorie discrete}{29}{section*.32}
+\contentsline {subsubsection}{Valore atteso per variabili aleatorie continue}{29}{section*.33}
+\contentsline {section}{\numberline {8.2}Trasformazioni di variabili aleatorie}{29}{section.8.2}
+\contentsline {section}{\numberline {8.3}Momenti}{30}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Momenti non centrati}{30}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Momenti centrati}{30}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Varianza}{30}{subsection.8.3.3}
+\contentsline {subsubsection}{Deviazione standart}{30}{section*.34}
+\contentsline {subsection}{\numberline {8.3.4}Coefficiente di variazione}{30}{subsection.8.3.4}
+\contentsline {subsection}{\numberline {8.3.5}Momento terzo centrato}{30}{subsection.8.3.5}
+\contentsline {subsection}{\numberline {8.3.6}Momento quarto centrato}{30}{subsection.8.3.6}
+\contentsline {section}{\numberline {8.4}Variabile aleatoria degenere}{30}{section.8.4}
+\contentsline {chapter}{\numberline {9}Variabili aleatorie multidimensionali}{33}{chapter.9}
+\contentsline {section}{\numberline {9.1}Boreliani}{33}{section.9.1}
+\contentsline {section}{\numberline {9.2}Variabili aleatorie discrete bidimensionali}{33}{section.9.2}
+\contentsline {section}{\numberline {9.3}Funzione di ripartizione congiunta}{34}{section.9.3}
+\contentsline {section}{\numberline {9.4}Variabili aleatorie bivariate continue}{34}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Densit\`a}{34}{subsection.9.4.1}
+\contentsline {subsubsection}{Definizione}{34}{section*.35}
+\contentsline {subsection}{\numberline {9.4.2}Relazione tra densit\`a congiunta e marginali}{34}{subsection.9.4.2}
+\contentsline {chapter}{\numberline {10}Dipendenza tra variabili aleatorie}{35}{chapter.10}
+\contentsline {section}{\numberline {10.1}Discrete}{35}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}Funzione di probabilit\`a condizionata}{35}{subsection.10.1.1}
+\contentsline {subsubsection}{Definizione}{35}{section*.36}
+\contentsline {subsubsection}{Notazione}{35}{section*.37}
+\contentsline {subsection}{\numberline {10.1.2}Indipendenza stocastica}{35}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}Valore atteso condizionato}{35}{subsection.10.1.3}
+\contentsline {section}{\numberline {10.2}Si ridica}{36}{section.10.2}
+\contentsline {section}{\numberline {10.3}Varianza condizionata}{36}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Formula della decomposizione della varianza}{36}{subsection.10.3.1}
+\contentsline {subsubsection}{Dimostrazione}{36}{section*.38}

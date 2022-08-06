@@ -1,0 +1,32 @@
+\chapter{Probabilit\`a condizionale}
+\subsubsection{Definizione}
+Sia $(\Omega,\mathcal{A},Pr)$ uno spazio probabilizzato. Fissato un elemento $H$ di $\mathcal{A}$, con $Pr(H)\neq 0$, si chiama funzione di probabilit\`a dedotta 
+da $Pr$ sotto la condizione $H$ la funzione di probabilit\`a $Pr_H$ sullo spazio $(\Omega,\mathcal{A})$ probabilizzabile:
+\begin{equation}
+Pr_H(A)-\dfrac{Pr(A\cap H)}{Pr(H)}
+\end{equation}
+Per ogni evento $A\in\mathcal{A}$. La probabilit\`a $Pr_H(A)$ si chiama probabilit\`a condizionale di $A$ secondo $Pr$ sotto la condizione $H$ e si denota $Pr(A|H)
+$.
+\section{Spazio di probabilit\`a condizionale}
+Dopo che \`e accaduto l'evento $H$ per ogni evento $A\in\mathcal{A}$ tale che $A\cap H=\emptyset$ si ha che $Pr_H(A)=PR(A|H)=0$, avremo quindi un altro modo di 
+definire lo spazio probabilizzato $(\Omega_H, \mathcal{A}_H, Pr_h)$ dove $\Omega_H=\{A\subseteq H:A\in\Omega\}$ e poich\`e accadono solo gli eventi che implicano 
+$H$, $\mathcal{A}_H=\{A\subseteq H:A\in\mathcal{A}\}$. 
+\section{teorema delle probabilit\`a totali}
+\subsection{Enuncitato}
+Sia $\{A_i\}_{i=1}^\infty$ una famiglia di eventi che costituisce una classe completa su $\Omega$ tale che $Pr(A_i)>0\;\;\forall i$ e sia $B$ un qualunque evento, 
+allora:
+\begin{equation}
+Pr(B)=\sum\limits_{i=1}^\infty Pr(A_i\cap B)=\sum\limits_{i=1}^\infty Pr(A_i)Pr(B|A_i)
+\end{equation}
+\subsubsection{Dimostrazione}
+Dalla relazione $\Omega=\bigcup\limits_{i=1}^\infty A_i$, intersecando con $B$ ambo i membri e per la propriet\`a distributiva rispetto all'unione si ottiene:
+$\Omega\cap B=\bigcup\limits_{i=1}^\infty(A_i)\cap B=\bigcup\limits_{i=1}^\infty(A_i\cap B)$, con gli eventi $A_i\cap B$ incompatibili a due a due. Segue allora che
+$Pr(B)=Pr(\bigcup\limits_{i=1}^\infty(A_i\cap B))=\sum\limits_{i=1}^\infty Pr(A_i\cap B)=\sum\limits_{i=1}^\infty Pr(A_i)Pr(B|A_i)$.
+\section{Teorema di Bayes}
+Sia $\{A_i\}_{i=1}^\infty$ una famiglia di eventi che costituisce una classe completa su $\Omega$ tale che $Pr(A_i)>0\;\;\forall i$ e sia $B$ un qualunque evento, 
+allora:
+\begin{equation}
+Pr(A_i|B)=\dfrac{PR(A_i)Pr(B|A_i)}{\sum\limits_{j=1}^\infty Pr(A_j)Pr(B|A_j)}
+\end{equation}
+\subsubsection{Dimostrazione}
+La dimostrazione \`e da fare, da ricordarsi, immediata dal teorema delle probabilit\`a totali.
